@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/simditor.css"/>
+    <link rel="stylesheet" type="text/css" href="css/simditor-html.css"/>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/module.js"></script>
+    <script type="text/javascript" src="js/hotkeys.js"></script>
+    <script type="text/javascript" src="js/uploader.js"></script>
+    <script type="text/javascript" src="js/simditor.js"></script>
+    <script type="text/javascript" src="js/simditor-autosave.js"></script>
+    <script type="text/javascript" src="js/UndoManager.js"></script>
+    <script type="text/javascript" src="js/beautify-html.js"></script>
+    <script type="text/javascript" src="js/simditor-undo.js"></script>
+</head>
+<body>
+<textarea id="editor" placeholder="Balabala" data-autosave="editor-content" autofocus></textarea>
+<script>
+    var editor = new Simditor({
+        textarea: $('#editor'),
+        toolbar:['title',
+            'bold',
+            'italic',
+            'underline',
+            'strikethrough',
+            'fontScale',
+            'color',
+            'ol'  ,
+            'ul'   ,
+            'blockquote',
+            'code' ,
+            'table',
+            'link',
+            'image',
+            'hr',
+            'indent',
+            'outdent',
+            'alignment',
+                'undo',
+                'redo'
+        ]
+        //optional options
+    });
+</script>
+</body>
+</html>
